@@ -19,6 +19,7 @@
           <li><a href="">SERVICES</a></li>
           <li><a href="">HIRE ME</a></li>
         </ul>
+        <img src="images/moon.png" alt="moon-icon" id="icon">
       </nav>
       <div class="info">
           <h1>I'm <span> Daisy</span> Harsha</h1>
@@ -40,5 +41,16 @@
 
       </div>
     </div>
+    <script>
+      let icon = document.getElementById("icon");
+      icon.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+          icon.src="images/sun.png";
+        }else{
+          icon.src="images/moon.png";
+        }
+      }
+    </script>
   </body>
 </html>
